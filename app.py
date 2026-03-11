@@ -399,7 +399,11 @@ def plot_segment_dist(dist: dict, total: int) -> go.Figure:
         height=max(160, len(items) * 40 + 60),
         xaxis_title="Segments",
         showlegend=False,
-        yaxis=dict(gridcolor="#22262f", linecolor="#22262f", tickfont=dict(family="Space Mono", size=11, color="#e8eaf0")),
+    )
+    fig.update_yaxes(
+        gridcolor="#22262f",
+        linecolor="#22262f",
+        tickfont=dict(family="Space Mono", size=11, color="#e8eaf0"),
     )
     return fig
 
